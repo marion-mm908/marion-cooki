@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,iniial scale 1.0">
+        <title>contact us -marion cookie company</title>
+        <style>
+            body {
+                background-color: bisque;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+
+            }
+            header {
+                background-color:aqua;
+                color: white;
+                padding: 1rem;
+                text-align: center;
+            }
+            main {
+                padding: 2rem;
+            }
+            footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 1rem;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                max-width: 600px;
+                margin: auto;
+            }
+            label {
+                margin-top: 1rem;
+            }
+            input,textarea {
+                padding: 0.5rem;
+                background-color:aqua;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>contact us</h1>
+        </header>
+        <main>
+            <h2>we'd love to hear from you!</h2>
+            <p>if you have any question comment or you if you just want to say hello</p>
+             <form action="submit contact.php" method="post">
+                <label for="name">name:</label>
+                <input type="text" id="name"name="name"required>
+                <label for="email">email:</label>
+                <input type="text" id="email" name="email"required>
+                <label for="message">message:</label>
+                <textarea id="message" name="message"rows="4"required></textarea>
+                <button type="submit">send message</button>
+             </form>
+             <p>
+                <a href="second.html">home</a>
+             </p>
+        </main>
+        <footer>
+            <p>&copy; <?php echo date("Y"); ?>MARION cookie company all right reserved.</p>
+        </footer>
+    </body>
+
+</html>
