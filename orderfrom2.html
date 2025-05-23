@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Cookies - MARION Cookie Company</title>
+    <meta charset="UTF-8">
+    <style>
+        body { background-color: bisque; }
+        section { background-color: bisque; color: brown; padding: 20px; }
+        table { margin-bottom: 20px; }
+        label { display: block; margin-top: 10px; }
+        button { background-color: blue; color: white; margin-top: 10px; }
+        footer { margin-top: 30px; text-align: center; color: brown; }
+    </style>
+</head>
+<body>
+    <a href="second.html">Back</a>
+    <section>
+        <h2>Order Your Cookies</h2>
+        <table border="1">
+            <tr>
+                <th>Cookie Type</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Chocolate Chip</td>
+                <td>Ksh. 50</td>
+            </tr>
+            <tr>
+                <td>Vanilla Chip</td>
+                <td>Ksh. 70</td>
+            </tr>
+        </table>
+        <form action="#" method="post">
+            <label for="cookie-type">Cookie Type</label>
+            <input type="text" id="cookie-type" name="cookie_type" placeholder="e.g. Chocolate Chip" required>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required>
+
+            <label for="date">Delivery Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Order</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 MARION Cookie Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
